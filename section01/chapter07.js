@@ -29,7 +29,11 @@
 
  let not = !true;
 
+ // 6. 비교 연산자 
+ let comp1 = 1 ==="1";
+ let comp2 = 1 !==2;
+ console.log(comp1,comp2);
  console.log(or,and,not);
- 
+
  console.log(++num8); //전위 연산 
 
