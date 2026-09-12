@@ -27,5 +27,5 @@
     console.log(person.name);
     printName(person);
  }
- let person = null;
+ let person = {name:"정재민"};
  printName(person);
