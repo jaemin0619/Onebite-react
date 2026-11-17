@@ -1,26 +1,23 @@
 
 import './App.css'
 import {useState} from "react"; 
-function App() {
-  const [count, setCount] = useState(0);
-const[light,setLight]=useState("OFF");
-  return (
-    <>
-    <div>
-      <h1>{light}</h1>
-      <button onClick={()=>{
-      setLight(light === 'ON'?"OFF":"ON")
-      }}>{light==="ON"?"끄기":"켜기"}</button>
-    </div>
-<h1>{count}</h1>
-<button onClick={()=>{
-  setCount(count+1);
-}}>
-  +
+import Bulb from "./components/Bulb";
+import Counter from "./components/Counter";
 
-</button>
-    </> 
+
+function App() {
+
+return (
+  <>
+      <Bulb/>
+<Counter/>
+  </> 
   );
 }
 
 export default App;
+
+
+// 1. state 
+// 2. props 
+// 3. 부모 컴포넌트 가 변경이 될 때 리렌더링 일어남
